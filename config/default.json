@@ -1,5 +1,9 @@
 {
     "server":{
         "port":5000
+    },
+    "logger":{
+        "level":"debug",
+        "supportedLevels":["error","warn","info","debug"]
     }
 }
