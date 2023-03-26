@@ -1,0 +1,14 @@
+networks:
+    portfolio-network:
+        external: true
+services:
+  backend:
+    container_name: portfolio-backend
+    image: portfolio-backend
+    networks:
+      - portfolio-network
+    build: 
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "8000:5000"
